@@ -5,7 +5,6 @@ import {
   CardHeader,
   CircularProgress,
   Input,
-  Image,
   CardBody,
   CardFooter,
   useDisclosure,
@@ -21,17 +20,15 @@ import {
 import { Link } from "react-router-dom";
 import { listOfGoofers } from "./data";
 
-type Props = {};
-
-const Expert = (props: Props) => {
+const Expert = () => {
   const [value, setValue] = useState(0);
   const [categorySearch, setCategorySearch] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const itemsPerPage = 3;
-  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
-  const [modalPlacement, setModalPlacement] = React.useState("auto");
-  const [goferId, setGoferId] = useState<string>("");
+  const { isOpen, onOpenChange } = useDisclosure();
+
+  const [goferId] = useState<string>("");
   const gofer = listOfGoofers.find((item) => item.id === goferId);
 
   useEffect(() => {
@@ -85,10 +82,12 @@ const Expert = (props: Props) => {
     setCurrentPage(page);
   };
 
-  const handleClickedGofer = (id: string) => {
-    setGoferId(id);
-    onOpen();
-  };
+  // const handleClickedGofer = (id: string) => {
+  //   setGoferId(id);
+  //   onOpen();
+  // };
+
+  console.log(value);
   return (
     <>
       <Navbar />
@@ -110,13 +109,6 @@ const Expert = (props: Props) => {
                       <Link to={`/gofer/${person.id}`}>
                         <Card className="max-w-[100%] p-3">
                           <CardHeader className="flex justify-between">
-                            {/* <Image
-                           alt="nextui logo"
-                           height={40}
-                           radius="sm"
-                           src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                           width={40}
-                         /> */}
                             <div className="flex gap-3">
                               <Avatar></Avatar>
                               <div className="flex flex-col">
@@ -143,9 +135,7 @@ const Expert = (props: Props) => {
                           </CardBody>
                           <Divider />
                           <CardFooter>
-                            <Link isExternal showAnchorIcon href="">
-                              {person.avrRank} {person.age}
-                            </Link>
+                            {person.avrRank} {person.age}
                           </CardFooter>
                         </Card>
                       </Link>

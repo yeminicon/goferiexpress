@@ -1,17 +1,6 @@
 import { SidebarRoutes } from "@/types/routes";
 import { IconType } from "react-icons";
-import {
-  FiBarChart2,
-  FiBook,
-  FiBox,
-  FiCoffee,
-  FiHelpCircle,
-  FiMail,
-  FiShoppingBag,
-  FiTruck,
-  FiUser,
-  FiUsers,
-} from "react-icons/fi";
+import { FiBarChart2, FiBox, FiHelpCircle, FiShoppingBag } from "react-icons/fi";
 
 export type SidebarLinkT = {
   title: string;
@@ -49,8 +38,7 @@ export const sidebarLinks: SidebarLinkT[] = [
       description: "List of all vendors",
     },
   },
-  
-  
+
   {
     title: "Wallet",
     pathname: SidebarRoutes.wallet,
@@ -59,6 +47,5 @@ export const sidebarLinks: SidebarLinkT[] = [
       title: "Wallet",
       description: "The Guardians of our digital realm",
     },
-  
   },
 ];

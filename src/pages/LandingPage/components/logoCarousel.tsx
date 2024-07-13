@@ -1,4 +1,3 @@
-
 import one from "../../../assets/image 279.svg";
 import two from "../../../assets/image 280.svg";
 import three from "../../../assets/image 281.svg";
@@ -6,13 +5,10 @@ import four from "../../../assets/image 279.svg";
 import five from "../../../assets/image 280.svg";
 import six from "../../../assets/image 281.svg";
 import seven from "../../../assets/image 280.svg";
-import { MdEngineering } from "react-icons/md";
-import { GiDoctorFace } from "react-icons/gi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./styles.css";
-import React from "react";
 import { Image } from "@nextui-org/react";
 
 function LogoCarousel() {
@@ -45,7 +41,7 @@ function LogoCarousel() {
       <Slider {...settings}>
         {images.map((src: any, index: any) => (
           <div key={index} className="mx-20">
-            <Image className="w-[80px]  h-[80px] "src={src} alt={`Brand ${index + 1}`} />
+            <Image className="w-[80px]  h-[80px] " src={src} alt={`Brand ${index + 1}`} />
           </div>
         ))}
       </Slider>

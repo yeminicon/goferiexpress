@@ -1,9 +1,6 @@
-import React from 'react'
-import { Formik, Form, Field } from "formik";
 
-type Props = {}
 
-const SelectText = (props: Props) => {
+const SelectText = () => {
   return (
     <div>SelectText</div>
   )

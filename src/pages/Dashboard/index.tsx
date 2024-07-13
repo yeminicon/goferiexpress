@@ -1,14 +1,5 @@
 import DataGraph from "@/components/Dashboard/DataGraph.tsx";
-import FilterByDateInput from "@/components/filterByDateInput";
-import TopSellingProducts from "@/components/Dashboard/topSellingProducts";
-import UsersOverview from "@/components/Dashboard/usersOverview";
-import VendorsOverview from "@/components/Dashboard/vendorsOverview";
-import ExportStatsButton from "@/components/exportStatsButton";
 import PageHeader from "@/components/PageHeader";
-import StatsCard from "@/components/Dashboard/statsCard";
-import { FaCalculator } from "react-icons/fa6";
-import { FiShoppingBag } from "react-icons/fi";
-import { BiSolidCoinStack } from "react-icons/bi";
 import { FaShuttleVan } from "react-icons/fa";
 import { Button } from "@nextui-org/react";
 import RecentActivities from "./recendTransaction";

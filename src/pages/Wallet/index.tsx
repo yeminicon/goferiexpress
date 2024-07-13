@@ -1,8 +1,6 @@
 import StatsCard from "@/components/Dashboard/statsCard";
 import AllWalletsTable from "@/components/Wallet/allWalletsTable";
-import OrdersDateTab from "@/components/Orders/ordersDateTab";
 import PageHeader from "@/components/PageHeader";
-import ExportStatsButton from "@/components/exportStatsButton";
 import FilterByDateInput from "@/components/filterByDateInput";
 import {
   Input,
@@ -19,7 +17,7 @@ import { MdLeakAdd, MdOutlineAccountBalanceWallet } from "react-icons/md";
 import { AiOutlineAccountBook } from "react-icons/ai";
 
 function WalletPage(): JSX.Element {
-  const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <div>
       <PageHeader title="Wallet" />
@@ -44,12 +42,6 @@ function WalletPage(): JSX.Element {
           />
           <StatsCard title="Account balance" figure="0" icon={AiOutlineAccountBook} />
           <StatsCard title="Account type" figure="Prepaid" icon={MdLeakAdd} />
-
-          {/* <OrdersDateTab /> */}
-          {/* <div className="flex gap-5 items-center absolute top-14 md:top-0 right-0">
-            <FilterByDateInput />
-            <ExportStatsButton />
-          </div> */}
         </div>
       </div>
       <div className="w-full border dark:border-dark rounded-xl md:rounded-2xl shadow-sm mt-4 lg:mt-8">

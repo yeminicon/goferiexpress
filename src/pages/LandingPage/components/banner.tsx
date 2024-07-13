@@ -1,13 +1,13 @@
-import React from "react";
-import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-import LogoCarousel from "./logoCarousel";
+// import React from "react";
+// import Slider from "react-slick";
+// // import "slick-carousel/slick/slick.css";
+// // import "slick-carousel/slick/slick-theme.css";
+// import LogoCarousel from "./logoCarousel";
 import { MdCategory, MdScreenSearchDesktop } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
-import { Image } from "@nextui-org/react";
+// import { Image } from "@nextui-org/react";
 
-type Props = {};
+
 
 const listOfOffers = [
   {
@@ -29,7 +29,7 @@ const listOfOffers = [
   },
 ];
 
-const BannerSAection = (props: Props) => {
+const BannerSAection = () => {
   return (
     <div className="my-10 w-[1100px] mx-auto">
       {/* <LogoCarousel /> */}

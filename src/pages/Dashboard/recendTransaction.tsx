@@ -1,9 +1,7 @@
 import { Divider } from "@nextui-org/react";
-import React, { useState } from "react";
+import { useState } from "react";
 
-type Props = {};
-
-const RecentActivities = (props: Props) => {
+const RecentActivities = () => {
   const ListOfTransaction = [
     {
       type: "Successful",
@@ -92,7 +90,9 @@ const RecentActivities = (props: Props) => {
                   {item.gofer.slice(0, 1)}
                 </div>
                 <div className="flex flex-col ml-1">
-                  <p className="text-[1rem] font-bold text-lg  dark:text-white text-[#090f29]">{item.gofer}</p>
+                  <p className="text-[1rem] font-bold text-lg  dark:text-white text-[#090f29]">
+                    {item.gofer}
+                  </p>
                   <p className="text-[0.75rem] font-light text-[#606786]">{item.date}</p>
                 </div>
               </div>

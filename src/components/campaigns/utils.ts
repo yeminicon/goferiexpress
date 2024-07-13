@@ -1,5 +1,4 @@
 import { CampaignsProductTableProps, CampaignsTableProps } from "./campaigns.interface";
-import CountryFlag from "@/assets/images/nigerian-flag.jpg";
 import RedShoe from "@/assets/images/red-shoe.png";
 import VendorInformation from "@/components/VendorDetails/vendorInformation";
 import VendorProducts from "@/components/VendorDetails/vendorProducts";

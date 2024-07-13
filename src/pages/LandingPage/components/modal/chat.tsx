@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
-  Modal,
   ModalContent,
   ModalHeader,
   ModalBody,
@@ -16,7 +15,7 @@ interface ChatMessage {
 }
 
 const ChatModal = () => {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [messages, setMessages] = useState<ChatMessage[] | any>([]);
   const [input, setInput] = useState<string>("");
 
   const handleSendMessage = async () => {
@@ -34,7 +33,7 @@ const ChatModal = () => {
   const getAIResponse = async (message: string) => {
     try {
       // Replace with actual API request
-      const response = await axios.post('https://api.openai.com/v1/chat/completions', { message });
+      const response = await axios.post("https://api.openai.com/v1/chat/completions", { message });
       return response.data.reply;
     } catch (error) {
       console.error("Error fetching AI response:", error);
@@ -48,16 +47,8 @@ const ChatModal = () => {
         <>
           <ModalHeader className="flex flex-col gap-1">Chat with Us</ModalHeader>
           <ModalBody>
-            {/* <div className="chatbox h-[500px] scroll-m-0 max-h-[500px] bg-red">
-              {messages.map((msg, index) => (
-                <div key={index} className={`message ${msg.sender} mt-5`}>
-                  <strong>{msg.sender === "client" ? "You" : "AI"}:</strong> {msg.message}
-                </div>
-              ))}
-            </div> */}
-
             <div className="chatbox h-[400px] max-h-[400px] overflow-y-auto p-5 bg-red-50">
-              {messages.map((msg, index) => (
+              {messages.map((msg: any, index: any) => (
                 <div key={index} className={`message ${msg.sender} mt-5`}>
                   <strong>{msg.sender === "client" ? "You" : "AI"}:</strong> {msg.message}
                 </div>

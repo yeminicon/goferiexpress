@@ -1,4 +1,3 @@
-import React from "react";
 import { Avatar } from "@nextui-org/react";
 import { motion } from "framer-motion";
 

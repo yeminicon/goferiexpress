@@ -1,12 +1,8 @@
-import { Button, Image, Input, Modal, useDisclosure } from "@nextui-org/react";
-import React from "react";
+import { Button, Modal, useDisclosure } from "@nextui-org/react";
 import hero from "@/assets/qne3ki1o.png";
-import { PiMessengerLogo, PiPhone } from "react-icons/pi";
+import { PiMessengerLogo } from "react-icons/pi";
 import ChatModal from "./modal/chat";
-
-type Props = {};
-
-const HeroSection = (props: Props) => {
+const HeroSection = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   return (
     <div className="w-[90%] mx-auto my-40">
@@ -19,7 +15,9 @@ const HeroSection = (props: Props) => {
 
         <div className="w-50% rounded-lg flex flex-col justify-between max-w-[500px] ml-20">
           <div className="mt-[0px] ">
-            <h1 className="font-bold md:text-[2.5rem] text-[1.5rem] mb-3">Welcome to Goferiexpress</h1>
+            <h1 className="font-bold md:text-[2.5rem] text-[1.5rem] mb-3">
+              Welcome to Goferiexpress
+            </h1>
             <p className="text-[1.25rem] mt-3">
               Amidst the bustling world of transactions, entrust your projects to reliable
               professionals who understand your needs. Join our community of trustworthy individuals
@@ -37,10 +35,7 @@ const HeroSection = (props: Props) => {
         </div>
       </div>
 
-      <Modal
-        isOpen={isOpen}
-        onOpenChange={onOpenChange}
-      >
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
         <ChatModal />
       </Modal>
     </div>

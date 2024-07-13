@@ -1,7 +1,4 @@
-import React from "react";
-
 import { Image } from "@nextui-org/react";
-
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa6";
 import navbarLogo from "@/assets/goferLogo.png"

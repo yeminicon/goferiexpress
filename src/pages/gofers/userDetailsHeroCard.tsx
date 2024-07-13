@@ -4,15 +4,27 @@ import { FaRegEdit } from "react-icons/fa";
 import { BackButton } from "@/components/BackButton";
 
 
+// interface FilterItem {
+//   id: string;
+//   name: string;
+//   profession: string;
+//   experience: string;
+//   category: string;
+//   avrRank: number;
+//   salaryExp: number;
+//   age: number;
+// }
+
+
 interface Props {
   isVIP?: boolean;
   userId: string;
   backRoute: string;
-  filterItem: object;
+  filterItem: any;
   
 }
 
-function UserDetailsHeroCard({ isVIP, backRoute, userId, filterItem }: Props): JSX.Element {
+function UserDetailsHeroCard({ isVIP, backRoute,  filterItem }: Props): JSX.Element {
   return (
     <div className="bg-[#1a1f35] px-6 py-7 space-y-8">
       <BackButton route={backRoute} />

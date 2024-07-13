@@ -1,6 +1,6 @@
 import { Tabs, Tab } from "@nextui-org/react";
 import UserDetailsHeroCard from "./userDetailsHeroCard";
-import { AuthRoutes, SidebarRoutes } from "@/types/routes";
+import { AuthRoutes } from "@/types/routes";
 import { vendorDetailsPageTab } from "./utils";
 import Navbar from "../LandingPage/components/navbar";
 import { useParams } from "react-router-dom";
@@ -14,12 +14,11 @@ function GoferDetails(): JSX.Element {
   return (
     <div>
       <Navbar />
-      {/* User details card with back route and user ID */}
 
       <div className="w-[1100px] mx-auto mt-20">
-      <UserDetailsHeroCard backRoute={AuthRoutes.hire} filterItem= {filteredGofer} userId={id} />
+      <UserDetailsHeroCard backRoute={AuthRoutes.hire} filterItem={filteredGofer} userId={""}  />
       <div className="mt-4 md:mt-14 lg:px-10 flex w-full flex-col">
-        {/* Dynamic tabs for vendor details */}
+      
         <Tabs
           aria-label="Dynamic tabs"
           items={vendorDetailsPageTab}

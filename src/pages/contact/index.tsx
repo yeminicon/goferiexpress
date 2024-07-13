@@ -1,4 +1,3 @@
-import React from "react";
 import { Input, Button, Textarea } from "@nextui-org/react";
 import Navbar from "../LandingPage/components/navbar";
 import Footer from "@/components/Footer";
@@ -20,7 +19,6 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-    
 
       <Footer />
     </div>

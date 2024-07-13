@@ -17,7 +17,7 @@ import { useState } from "react";
 
 function AllWalletsTable(): JSX.Element {
   const { isOpen, onOpen, onOpenChange, onClose } = useDisclosure();
-  const [currentPage, setCurrentPage] = useState(1);
+  const [currentPage] = useState(1);
   const itemsPerPage = 2;
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -26,9 +26,7 @@ function AllWalletsTable(): JSX.Element {
 
   const totalPages = Math.ceil(allWalletsData.length / itemsPerPage);
 
-  const handlePageChange = (pageNumber: number) => {
-    setCurrentPage(pageNumber);
-  };
+
 
   const pageNumbers = [];
   for (let i = 1; i <= totalPages; i++) {

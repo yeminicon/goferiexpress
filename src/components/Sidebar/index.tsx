@@ -13,8 +13,7 @@ import {
   Tooltip,
   useDisclosure,
 } from "@nextui-org/react";
-import { FiChevronsLeft, FiChevronsRight, FiLink2, FiLogOut, FiSettings } from "react-icons/fi";
-import { IoAdd } from "react-icons/io5";
+import { FiChevronsLeft, FiChevronsRight, FiLogOut, FiSettings } from "react-icons/fi";
 import AppLogo from "@/assets/AppLogo.png";
 import { SidebarRoutes } from "@/types/routes";
 import { sidebarLinks } from "./sidebarLinks";
@@ -35,7 +34,7 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   const sidebarRef = useRef<HTMLDivElement>(null);
   const backdropRef = useRef<HTMLDivElement>(null);
 
-  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+  const { isOpen,  onOpenChange } = useDisclosure();
 
   const toggleSnapped = useCallback(() => {
     setIsSnapped((prev) => !prev);
@@ -161,8 +160,6 @@ export const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
           <div
             className={`w-full overflow-hidden p-4 pt-[calc(100vh-55rem)]  space-y-4 ${!isSnapped && "w-full"}`}
           >
-        
-
             <Divider />
             <ul className="flex flex-col gap-1 mb-2">
               <li className="group hover:text-white">

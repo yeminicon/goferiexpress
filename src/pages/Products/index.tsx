@@ -6,9 +6,8 @@ import { BiSolidBatteryFull } from "react-icons/bi";
 import { GiNetworkBars } from "react-icons/gi";
 import dayjs from "dayjs";
 import { MdOutlineLocalOffer, MdOutlineSmsFailed } from "react-icons/md";
-import { Chip, Tab, Tabs } from "@nextui-org/react";
+import { Tab, Tabs } from "@nextui-org/react";
 import { PiFirstAidKitThin } from "react-icons/pi";
-import VendorsTable from "@/components/Vendors/vendorsTable";
 import CampaignsTable from "@/components/campaigns/campaignsTable";
 
 interface CampaignFormValues {

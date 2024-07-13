@@ -48,7 +48,7 @@ export const deleteCampaign = async (id: string) => {
   return data;
 };
 
-export const fetchSentCampaign = async (page: number, search?: string) => {
+export const fetchSentCampaign = async () => {
   const {
     data: { data },
   } = await axios.get("/campaign/sent");

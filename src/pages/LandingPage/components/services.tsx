@@ -1,11 +1,9 @@
 import { Image, Button } from "@nextui-org/react";
-import React from "react";
 import hero from "@/assets/handshake.svg";
 import multitask from "@/assets/multitask.png";
 import social from "@/assets/office.png";
-type Props = {};
 
-const Services = (props: Props) => {
+const Services = () => {
   return (
     <div className="w-[90%] mt-40 mx-auto">
       <div className="mx-auto w-[160px] font-bold">
