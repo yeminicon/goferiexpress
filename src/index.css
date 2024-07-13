@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.user-bg-image {
+  background-image: url("./assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.data-\[moving\]\:opacity-100[data-moving] {
+  background-color: #dfe4f2;
+  color: #5872ba;
+  font-weight: bold;
+}
+
+.text-default-foreground {
+  color: #83899a;
+}
+@keyframes increaseSideBarWidth {
+  from {
+    width: 5.75rem;
+  }
+
+  to {
+    width: 18rem;
+  }
+}
+
+@keyframes snapSideBarWidth {
+  from {
+    width: 18rem;
+  }
+
+  to {
+    width: 5.75rem;
+  }
+}
+
+.animate-sidebar-width-inc {
+  animation: increaseSideBarWidth 0.5s ease-in-out forwards;
+}
+
+.animate-sidebar-width-snap {
+  animation: snapSideBarWidth 0.5s ease-in-out forwards;
+}
+
+@keyframes hideText {
+  from {
+    opacity: 1;
+    width: 100%;
+  }
+
+  to {
+    opacity: 0;
+    width: 0;
+  }
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+    width: 0;
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.animate-sidebar-text-hide {
+  animation: hideText 0.5s ease-in forwards;
+}
+
+.animate-sidebar-text-show {
+  animation: showText 0.5s ease-in forwards;
+}
+
+.table-header th:first-child {
+  border-radius: 0;
+}
+
+.table-header th:last-child {
+  border-radius: 0;
+}

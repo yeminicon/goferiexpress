@@ -1,0 +1,43 @@
+
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+
+  
+
+  
+  .mainContainer{
+    margin: 0.625rem;
+  }
+  
+  .mainContainer .container{
+    padding: 2.5rem 0;
+  }
+  
+  .mainContainer .container img{
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  div h3{
+    color: white;
+    font-weight: bold;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
