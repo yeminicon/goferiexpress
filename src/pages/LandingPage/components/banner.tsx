@@ -7,8 +7,6 @@ import { MdCategory, MdScreenSearchDesktop } from "react-icons/md";
 import { RiSecurePaymentFill } from "react-icons/ri";
 // import { Image } from "@nextui-org/react";
 
-
-
 const listOfOffers = [
   {
     name: "Select Category",
@@ -31,17 +29,17 @@ const listOfOffers = [
 
 const BannerSAection = () => {
   return (
-    <div className="my-10 w-[1100px] mx-auto">
+    <div className="my-10 w-[400px] max-w-[100%] md:w-[1100px] mx-auto">
       {/* <LogoCarousel /> */}
 
-      <h1 className="mx-auto text-center text-[#075c86ec] font-bold text-[2.5rem] ">
+      <h1 className="mx-auto text-center text-[#075c86ec] font-bold text-[1.25rem] md:text-[2.5rem] ">
         We make the connect easy & stress free.
       </h1>
-      <p className="text-center  text-[#000] text-[1.25rem] font-medium my-3">
-        With the right professionals things can happen. 3 easy steps{" "}
+      <p className="text-center text-[#000] text-[0.75rem] md:text-[1.25rem] font-medium my-3">
+        With the right professionals things can happen. 3 easy steps
       </p>
 
-      <div className="w-[400px] md:w-[1100px] mx-auto max-w-[100%] flex flex-col md:flex-row mt-16 ">
+      <div className="w-[400px] md:w-[1100px] mx-auto max-w-[100%] flex flex-col md:flex-row mt-16">
         {listOfOffers.map((offer) => (
           <div className="w-[330px] h-[300px] flex flex-col justify-between  box-border shadow-lg mx-5 p-4 rounded-lg">
             <div>
