@@ -29,7 +29,7 @@ const listOfOffers = [
 
 const BannerSAection = () => {
   return (
-    <div className="my-10 w-[400px] max-w-[100%] md:w-[1100px] mx-auto">
+    <div className="my-10 w-[90%] max-w-[100%] md:w-[1100px] mx-auto">
       {/* <LogoCarousel /> */}
 
       <h1 className="mx-auto text-center text-[#075c86ec] font-bold text-[1.25rem] md:text-[2.5rem] ">
